@@ -3,8 +3,7 @@
 
          		          EFRAIN CHAVEZ HERNANDEZ
        			    FUNDAMENTOS DE INTELIGENCIA ARTIFICIAL
-        		        DR.SALVADOR GODOY CALDERÓN
-         		          TAREA: poker.prolog
+        		  
     Construya un programa Prolog para reparatir cartas a 4 jugadores e identificar la mejor 
               figura que cada uno puede lograr con la mano que recibió.
   
