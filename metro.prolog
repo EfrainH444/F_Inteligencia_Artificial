@@ -1,6 +1,5 @@
 /*================================================================================
 				EFRAIN CHAVEZ HERNANDEZ
-       			    FUNDAMENTOS DE INTELIGENCIA ARTIFICIAL
         		 
     Elabore un programa Prolog  para  asistir a un viajero en el la red del Sistema Colectivo 
       Metro de la CdMx.El programa debe resolver 3 predicados fundamentales:  mejor_ruta/4, 
