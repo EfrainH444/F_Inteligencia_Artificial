@@ -1,8 +1,7 @@
 /*================================================================================
 				EFRAIN CHAVEZ HERNANDEZ
        			    FUNDAMENTOS DE INTELIGENCIA ARTIFICIAL
-        		        DR.SALVADOR GODOY CALDERÓN
-         		          TAREA: metro.prolog
+        		 
     Elabore un programa Prolog  para  asistir a un viajero en el la red del Sistema Colectivo 
       Metro de la CdMx.El programa debe resolver 3 predicados fundamentales:  mejor_ruta/4, 
   reporte_tiempo/2 y reporte_simplificado/2 tal como lo indican las láminas de la presentación #19...
