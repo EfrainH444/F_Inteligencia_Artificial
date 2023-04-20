@@ -5,8 +5,7 @@
 
          		              EFRAIN CHAVEZ HERNANDEZ
        			       FUNDAMENTOS DE INTELIGENCIA ARTIFICIAL
-        		            DR.SALVADOR GODOY CALDERÓN
-         		                TAREA: cebra.prolog
+        		            
           Resuelva en Prolog  los tres problemas básicos de unificación que se encuentran al 
 	       	          final de la presentación #16 (versiones recortadas:)
 	       	          
