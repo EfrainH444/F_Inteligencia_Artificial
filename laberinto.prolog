@@ -1,8 +1,6 @@
 
 %				EFRAIN CHAVEZ HERNANDEZ
 %	   		 FUNDAMENTOS DE INTELIGENCIA ARTIFICIAL
-%        		      DR.SALVADOR GODOY CALDERÓN
-%				TAREA: laberinto.prolog
 
 %		Programe predicados Prolog  para solucionar el laberinto que 
 %	se inidica en la presentación #24  y que está  codificado  en  el  archivo:
@@ -50,13 +48,11 @@ do_search(Targets,[_|More],AFinalPath):-
 	
 
 % Definición de la función de aptitud para el elemento dado
-% DISTANCIA HAMILTONIANA
 
 buscaAptitud(Elemento, Target, Aptitud) :-
     Elemento = [X1, Y1],
     Target = [X2, Y2],
-    Aptitud #= 1,
-    Costo is X + Y + Niveles.
+    Aptitud #= (X2-X1) + (Y2-Y1).
 
 un_acceso(Nodo, NodoAcceso) :-
     acceso(Nodo, Accesos),
