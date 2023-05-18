@@ -1,16 +1,7 @@
 /*================================================================================
 				EFRAIN CHAVEZ HERNANDEZ
        			    FUNDAMENTOS DE INTELIGENCIA ARTIFICIAL
-        		       DR.SALVADOR GODOY CALDERÓN
-         		    TAREA: misioneros_canibales.prolog
-  
-  
-  PREDICADOS IMPORTANTES:
-  
-  busca_DFS(<Ei>,<Em>)
-  busca_BFS(<Ei>,<Em>)
-  despliega(<plan>)
-  
+        		 
 ================================================================================*/
 /*
 edo_meta().
@@ -122,6 +113,12 @@ despliega([Estado|Resto]):- L = [Estado|Resto], length(L,Tamaño),
 	format("Inicio en: "), despliega_estado_2(Estado),
 	aux_simplificado(L,0,_),!.
 
+% Predicado para desplegar un estado
+despliega_estado([MO,CO,MD,CD,_],It,Mov) :-
+    format("~w) Aplicando	~w		se llega a	((~w ~w) (~w ~w)) ~n",[It,Mov,MO,CO,MD,CD]).
+
+despliega_estado_2([MO,CO,MD,CD,_]) :-
+    format("((~w ~w) (~w ~w)) ~n",[MO,CO,MD,CD]).
 
 aux_simplificado(Ruta,Incremento,Incremento):- length(Ruta,Tamaño), Incremento is Tamaño-1,!.
 
@@ -132,12 +129,4 @@ aux_simplificado(Ruta,Incremento,IncrementoT):- Incremento2 is Incremento + 1,
    aux_simplificado(Ruta,Incremento2,IncrementoT).
 
 
-% Predicado para desplegar un estado
-despliega_estado([MO,CO,MD,CD,_],It,Mov) :-
-    format("~w) Aplicando	~w		se llega a	((~w ~w) (~w ~w)) ~n",[It,Mov,MO,CO,MD,CD]).
-
-despliega_estado_2([MO,CO,MD,CD,_]) :-
-    format("((~w ~w) (~w ~w)) ~n",[MO,CO,MD,CD]).
-
-	
 	
